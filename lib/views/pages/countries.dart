@@ -119,7 +119,7 @@ class _CountriesState extends State<Countries> {
                         ),
                           Column(children: <Widget>[
                           Text("Recovered"),
-                          Text(AppHelper.formatNumber(filteredCountries[indext].totalConfirmed),
+                          Text(AppHelper.formatNumber(filteredCountries[indext].totalRecovered),
                           style: TextStyle(color: Colors.green[800]),)
                         ],
                         )

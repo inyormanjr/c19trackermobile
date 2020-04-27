@@ -41,7 +41,7 @@ class _MainAppState extends State<MainApp> {
         BottomNavigationBarItem(
             icon: Icon(Icons.map),
              title: Text('Countries', style: TextStyle(color: bnavitemColor),),
-          activeIcon: Icon(Icons.home, color: bnavitemColor,)
+          activeIcon: Icon(Icons.map, color: bnavitemColor,)
         ),
         // BottomNavigationBarItem(
         //     icon: Icon(Icons.info),
