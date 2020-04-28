@@ -64,18 +64,33 @@ flutter:
   # list giving the asset and other descriptors for the font. For
   # example:
 fonts:
-      - family: playfair
-        fonts:
-          - asset: fonts/playfair/PlayfairDisplay-Regular.otf
-          - asset: fonts/playfair/PlayfairDisplay-Italic.otf
-            style: italic
 
-      - family: LexendGiga
+      - family: SR
         fonts:
-          - asset: fonts/LexendGiga-Regular.ttf
-            style: normal
+          - asset: fonts/sr/sr.ttf
+
+      - family: SR Italic
+        fonts:
+          - asset: fonts/sr/sritalic.ttf
+
+      - family: SR Bold
+        fonts:
+          - asset: fonts/sr/srbold.ttf
+          - weight: 700
+
+      - family: SR Italic Bold
+        fonts:
+          - asset: fonts/sr/srbolditalic.ttf
+          - weight: 700
+
+      - family: Oswald400
+        fonts:
+          - asset: fonts/Oswald-VariableFont_wght.ttf
+          - style: regular
+          - weight: 400
   #       - asset: fonts/TrajanPro_Bold.ttf
   #         weight: 700
+
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
