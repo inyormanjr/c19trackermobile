@@ -8,7 +8,7 @@ class CovidInfoService {
 
   Future<CovidSummary> getCovidSummary() async {
     try {
-         final response = await http.get(this.apiBaseUrl + 'summary');
+        final response = await http.get(this.apiBaseUrl + 'summary');
     if (response.statusCode == 200) {
       var decode = json.decode(response.body);
       var e = CovidSummary.fromJson(decode);

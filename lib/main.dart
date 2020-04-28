@@ -14,11 +14,12 @@ void main() => runApp(
   ],
   child:   MaterialApp(
     theme: ThemeData(
-        primaryColor: Colors.white,
-        accentColor: Colors.blue[800],
+        primaryColor: Color.fromRGBO(248,248,248, 1),
+         accentColor: Color.fromRGBO(94,74,239,1),
+           cardColor: Color.fromRGBO(246, 248, 249, 1)
     ),
     debugShowCheckedModeBanner: false,
-    home: SplashScreen(),
+    home: SplashScreen2(),
   ),
 )
 );

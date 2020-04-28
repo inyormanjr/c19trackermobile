@@ -33,6 +33,18 @@ class CovidData with ChangeNotifier  {
         _covidSummary = _summary;
       }
 
+      attachCountryISO(List<Country> countryWithISO) {
+        this._covidSummary.countries.forEach((countryInfo) {
+        var code = countryWithISO
+                    .where((x) =>
+                        x.slug.toLowerCase() ==
+                        countryInfo.slug.toLowerCase())
+                    .first
+                    .iso2;
+        countryInfo.attachCountryFlag(code);
+        });
+      }
+
       refreshSummaryInfo() async{
       CovidInfoService().getCovidSummary().then((onValue) {
         if(onValue != null){

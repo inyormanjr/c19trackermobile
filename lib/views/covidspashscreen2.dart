@@ -6,6 +6,8 @@ import 'package:c19tracker/views/covid.main.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
+import 'covid.main.v2.dart';
+
 class SplashScreen2 extends StatefulWidget {
   
   
@@ -109,7 +111,7 @@ class _SplashScreenState extends State<SplashScreen2> {
                         Navigator.pushReplacement(
                             context,
                             (MaterialPageRoute(
-                                builder: (BuildContext context) => MainApp())));
+                                builder: (BuildContext context) => CovidAppMain())));
                       });
                       
                       return doneLoading("Welcome User", true, null);
